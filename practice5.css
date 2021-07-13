@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-width: 500px;
+
+
+}
+.header{
+    padding:2%;
+    background-color: rgba(243, 243, 243, 0.67);
+    min-width: 500px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+nav ul li{
+    padding: 1%;
+    margin: 1% auto;
+}
+.logo{
+    text-align: center;
+    width: 50%;
+}
+
+.logo h1{
+    font-size: 2.8rem;
+    font-family: 'Lora', serif;;
+    color: #0101c1;
+    font-weight: lighter;
+}
+.smalltitle{
+    color: #5593fa;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 6px;
+}
+nav{
+    width: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    padding:2% 0;
+}
+nav ul li a{
+    color: gray;
+}
+nav ul li a:hover,a:focus{
+    color: #5593fa;
+}
+.current-page{
+    border-bottom: 2px solid #5593fa;
+}
+.current-page:hover,.current-page:focus{
+    color:gray ;
+}
+.section1{
+    width: 90%;
+    max-width: 1000px;
+    margin: 2% auto;
+    min-width: 500px;
+    display: flex;
+}
+.box1{
+    width: 75%;
+    padding: 2%;
+
+}
+.box2{
+    font-size: smaller;
+    width:25%;
+    padding: 2%;
+}
+.big img{
+    width:100%;
+}
+.big h1{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #0101c1;
+    letter-spacing: 2px;
+
+}
+.big{
+    padding: 2%;
+    border: 10px solid #e8e8e8;
+    width:90%;
+    margin: 0 auto;
+}
+.small{
+    border: 10px solid #e8e8e8;
+    padding: 2%;
+    width:90%;
+    margin: 2% auto;
+}
+.small img{
+    width: 100%;
+}
+.footer{
+    background-color: #000076;
+    padding: 3%;
+    min-width: 500px;
+}
+.ending-text{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer p{
+    text-align: center;
+    color: #e8e8e8;
+}
+p{
+    letter-spacing: 1px;
+    padding: 2%;
+}
+@media(max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+    .logo,nav{
+        width:100%;
+    }
+    nav ul{
+        width: 80%;
+    }
+}
+
+@media(max-width: 420px){
+
+    nav ul{
+        padding: 2%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .logo h1{
+        font-size: 3rem;
+    }
+    .logo p{
+        font-size: 0.8rem;
+    }
+    .section1{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .box2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .smalltitle{
+        font-size: 1.3rem;
+    }
+    .big h1{
+        font-size: 2rem;
+    }
+
+}
